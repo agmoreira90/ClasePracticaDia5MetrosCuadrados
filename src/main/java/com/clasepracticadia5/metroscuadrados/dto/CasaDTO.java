@@ -10,7 +10,7 @@ import java.util.ArrayList;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Casa {
+public class CasaDTO {
     private String nombre;
     private String direccion;
     private ArrayList<Habitacion> habitaciones;
@@ -18,7 +18,7 @@ public class Casa {
     private Double metrosCuadrados;
     private Double precio;
 
-    public Casa(String nombre, String direccion) {
+    public CasaDTO(String nombre, String direccion) {
         this.nombre = nombre;
         this.direccion = direccion;
         this.habitaciones = new ArrayList<>();
@@ -26,7 +26,7 @@ public class Casa {
         this.metrosCuadrados = 0.0;
         this.precio = 0.0;
     }
-    public Casa(String nombre, String direccion,ArrayList<Habitacion> habitaciones,Double metrosCuadrados) {
+    public CasaDTO(String nombre, String direccion, ArrayList<Habitacion> habitaciones, Double metrosCuadrados) {
         this.nombre = nombre;
         this.direccion = direccion;
         this.habitaciones = habitaciones;
